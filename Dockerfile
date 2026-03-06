@@ -6,7 +6,12 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     libzip-dev \
-    && docker-php-ext-install pdo pdo_mysql zip
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libonig-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo pdo_mysql gd zip
 
 # Enable Apache rewrite
 RUN a2enmod rewrite
@@ -14,31 +19,30 @@ RUN a2enmod rewrite
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy project
-COPY . /var/www/html
+# Copy project files
+COPY . .
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
 # Install Laravel dependencies
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Permissions
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 storage bootstrap/cache
+# Fix permissions
+RUN chown -R www-data:www-data storage bootstrap/cache
 
-# Change Apache document root to public
+# Set Apache document root to Laravel public folder
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
-# Laravel setup commands
+# Cache Laravel configs
 RUN php artisan config:clear || true
 RUN php artisan cache:clear || true
 
 # Expose port
 EXPOSE 80
 
-# Start server + migrate + seed
+# Start Laravel with migrations + seed
 CMD php artisan migrate --force && \
     php artisan db:seed --force && \
     apache2-foreground
