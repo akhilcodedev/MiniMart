@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-# Install dependencies and GD extension
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
@@ -25,19 +25,23 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
-# Install Laravel dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+# Install Laravel dependencies (including dev for Faker)
+RUN composer install --optimize-autoloader --no-interaction
 
-# Fix permissions
+# Fix Laravel permissions
 RUN chown -R www-data:www-data storage bootstrap/cache
 
-# Set Apache document root to Laravel public
+# Set Apache document root to Laravel public folder
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
+
+# Clear Laravel caches
+RUN php artisan config:clear || true
+RUN php artisan cache:clear || true
 
 # Expose port
 EXPOSE 80
 
-# Start Laravel
+# Run migrations and seeders, then start Apache
 CMD php artisan migrate --force && \
     php artisan db:seed --force && \
     apache2-foreground
