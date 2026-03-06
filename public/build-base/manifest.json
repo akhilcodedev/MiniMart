@@ -1,0 +1,22 @@
+{
+  "resources/assets/js/app.js": {
+    "file": "assets/app-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/assets/js/app.js"
+  },
+  "resources/assets/js/themeColor.js": {
+    "file": "assets/themeColor-9cd64796.js",
+    "isEntry": true,
+    "src": "resources/assets/js/themeColor.js"
+  },
+  "resources/assets/sass/app.scss": {
+    "file": "assets/app-452ca5e4.css",
+    "isEntry": true,
+    "src": "resources/assets/sass/responsive.scss"
+  },
+  "resources/assets/sass/responsive.scss": {
+    "file": "assets/app-452ca5e4.css",
+    "isEntry": true,
+    "src": "resources/assets/sass/responsive.scss"
+  }
+}

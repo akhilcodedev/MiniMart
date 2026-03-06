@@ -1,0 +1,11 @@
+{
+    "name": "WebConfigurationManagement",
+    "alias": "webconfigurationmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebConfigurationManagement\\Providers\\WebConfigurationManagementServiceProvider"
+    ],
+    "files": []
+}

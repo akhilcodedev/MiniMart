@@ -1,0 +1,11 @@
+{
+    "name": "TaxManagement",
+    "alias": "taxmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TaxManagement\\Providers\\TaxManagementServiceProvider"
+    ],
+    "files": []
+}

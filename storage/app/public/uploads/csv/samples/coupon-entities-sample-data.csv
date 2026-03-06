@@ -1,0 +1,4 @@
+CouponEntityCode,CouponEntity,SortOrder,Status
+all,All,1,TRUE
+category,Category,2,TRUE
+product,Product,3,TRUE

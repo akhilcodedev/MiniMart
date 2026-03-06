@@ -1,0 +1,11 @@
+{
+    "name": "URLRewrite",
+    "alias": "urlrewrite",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\URLRewrite\\Providers\\URLRewriteServiceProvider"
+    ],
+    "files": []
+}

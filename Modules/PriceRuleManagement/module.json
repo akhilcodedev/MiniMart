@@ -1,0 +1,11 @@
+{
+    "name": "PriceRuleManagement",
+    "alias": "pricerulemanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PriceRuleManagement\\Providers\\PriceRuleManagementServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,6 @@
+CouponTypeCode,CouponType,SortOrder,Status
+manual,"Manual Type",1,TRUE
+promotional,Promotional,2,TRUE
+inaugural,Inaugural,3,TRUE
+first_time_user,"First Time (User)",4,TRUE
+cashback,Cashback,5,TRUE

@@ -1,0 +1,15 @@
+*
+!uploads
+!uploads/media
+uploads/media/*
+!uploads/media/images
+!uploads/media/images/*
+!uploads/fcm
+!uploads/fcm/*
+!uploads/csv
+uploads/csv/*
+!uploads/csv/samples
+!uploads/csv/samples/*
+!uploads/contentapi
+!uploads/contentapi/*
+!.gitignore

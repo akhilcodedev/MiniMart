@@ -1,0 +1,11 @@
+{
+    "name": "PaymentManagement",
+    "alias": "paymentmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PaymentManagement\\Providers\\PaymentManagementServiceProvider"
+    ],
+    "files": []
+}

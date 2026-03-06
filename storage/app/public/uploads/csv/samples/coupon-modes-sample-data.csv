@@ -1,0 +1,3 @@
+CouponModeCode,CouponMode,SortOrder,Status
+amount,"Amount Discount",1,TRUE
+percentage,"Percent Discount",2,TRUE

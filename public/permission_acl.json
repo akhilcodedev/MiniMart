@@ -1,0 +1,880 @@
+{
+    "modules": [
+        {
+            "name": "user_management",
+            "id": 1,
+            "label": "Admin User Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "create_user",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/User/UserController/create",
+                    "Label": "Create User"
+                },
+                {
+                    "id": 2,
+                    "name": "update_user",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/User/UserController/update",
+                    "Label": "Update User"
+                },
+                {
+                    "id": 3,
+                    "name": "delete_user",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/User/UserController/destroy",
+                    "Label": "Delete User"
+                },
+                {
+                    "id": 4,
+                    "name": "list_user",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/User/UserController/index",
+                    "Label": "List User"
+                },
+                {
+                    "id": 5,
+                    "name": "create_vendor",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/Vendor/VendorController/create",
+                    "Label": "Create Vendor"
+                },
+                {
+                    "id": 6,
+                    "name": "edit_vendor",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/Vendor/VendorController/edit",
+                    "Label": "Edit Vendor"
+                },
+                {
+                    "id": 7,
+                    "name": "delete_vendor",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/Vendor/VendorController/softDelete",
+                    "Label": "Delete Vendor"
+                },
+                {
+                    "id": 8,
+                    "name": "list_vendor",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/Vendor/VendorController/index",
+                    "Label": "List Vendor"
+                },
+                {
+                    "id": 9,
+                    "name": "assign_vendor_to_users",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/UserVendor/VendorUserController/create",
+                    "Label": "Assign vendor to users"
+                },
+                {
+                    "id": 10,
+                    "name": "edit_assigned_users",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/UserVendor/VendorUserController/edit",
+                    "Label": "Edit vendor to users table"
+                },
+                {
+                    "id": 11,
+                    "name": "delete_assigned_users",
+                    "controller": "Modules/UserManagement/app/Http/Controllers/UserVendor/VendorUserController/delete",
+                    "Label": "Delete vendor to users table"
+                }
+            ]
+        },
+        {
+            "name": "customer_management",
+            "id": 2,
+            "label": "Customer  Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "create_customer",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerController/create",
+                    "Label": "Create Customers"
+                },
+                {
+                    "id": 2,
+                    "name": "edit_customer",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerController/create",
+                    "Label": "Edit Customers"
+                },
+                {
+                    "id": 3,
+                    "name": "delete_customer",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerController/create",
+                    "Label": "Delete Customers"
+                },
+                {
+                    "id": 4,
+                    "name": "view_customer",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerController/edit",
+                    "Label": "View Customers"
+                },
+                {
+                    "id": 5,
+                    "name": "list_customer",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerController/create",
+                    "Label": "List Customers"
+                },
+                {
+                    "id": 6,
+                    "name": "customer_group_create",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerGroups/CustomerGroupsController/destroy",
+                    "Label": "Customer Group Create"
+                },
+                {
+                    "id": 7,
+                    "name": "customer_group_edit",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerGroups/CustomerGroupsController/destroy",
+                    "Label": "Customer Group Edit"
+                },
+                {
+                    "id": 8,
+                    "name": "customer_group_view",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerGroups/CustomerGroupsController/destroy",
+                    "Label": "Customer Group View"
+                },
+                {
+                    "id": 9,
+                    "name": "customer_group_delete",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerGroups/CustomerGroupsController/destroy",
+                    "Label": "Customer Group Delete"
+                },
+                {
+                    "id": 10,
+                    "name": "customer_group_list",
+                    "controller": "Modules/Customer/app/Http/Controllers/CustomerGroups/CustomerGroupsController/destroy",
+                    "Label": "Customer Group List"
+                }
+            ]
+        },
+        {
+            "name": "attribute_management",
+            "id": 3,
+            "label": "Attribute Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "create_attribute",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributesController/create",
+                    "Label": "Create Attribute"
+                },
+                {
+                    "id": 2,
+                    "name": "show_attribute",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributesController/index",
+                    "Label": "Show Attribute"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_attribute",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributesController/edit",
+                    "Label": "Edit Attribute"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_attribute",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributesController/destroy",
+                    "Label": "Delete Attribute"
+                },
+                {
+                    "id": 5,
+                    "name": "create_attribute_set",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributeSetsController/create",
+                    "Label": "Create Attribute Set"
+                },
+                {
+                    "id": 6,
+                    "name": "show_attribute_set",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributeSetsController/index",
+                    "Label": "Show Attribute Set"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_attribute_set",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributeSetsController/edit",
+                    "Label": "Edit Attribute Set"
+                },
+                {
+                    "id": 8,
+                    "name": "delete_attribute_set",
+                    "controller": "Modules/ProductAttributes/app/Http/Controllers/ProductAttributeSetsController/destroy",
+                    "Label": "Delete Attribute Set"
+                }
+            ]
+        },
+        {
+            "name": "user_permissions",
+            "id": 4,
+            "label": "User Permission",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "create_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RoleController/store",
+                    "Label": "Create Role"
+                },
+                {
+                    "id": 2,
+                    "name": "update_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RoleController/edit",
+                    "Label": "Update Role"
+                },
+                {
+                    "id": 3,
+                    "name": "delete_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RoleController/destroy",
+                    "Label": "Delete Role"
+                },
+                {
+                    "id": 4,
+                    "name": "list_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RoleController/index",
+                    "Label": "List Role"
+                },
+                {
+                    "id": 5,
+                    "name": "list_permissions_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RolePermissionController/index",
+                    "Label": "List Permissions For Roles"
+                },
+                {
+                    "id": 6,
+                    "name": "assign_permissions_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RolePermissionController/assign",
+                    "Label": "Assign Permissions For Roles"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_permissions_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/RolePermissionController/edit",
+                    "Label": "Edit Permissions For Roles"
+                },
+                {
+                    "id": 8,
+                    "name": "assign_users_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/UserRoleController/create",
+                    "Label": "Assign Users To Role"
+                },
+                {
+                    "id": 9,
+                    "name": "edit_users_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/UserRoleController/edit",
+                    "Label": "Edit Users To Role"
+                },
+                {
+                    "id": 10,
+                    "name": "show_permission_history",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/UserRoleController",
+                    "Label": "Show Permission History"
+                },
+                {
+                    "id": 11,
+                    "name": "delete_users_role",
+                    "controller": "Modules/UserPermission/app/Http/Controllers/Roles/UserRoleController/deleteUser",
+                    "Label": "Remove User From Role"
+                }
+            ]
+        },
+        {
+            "name": "price_rule_management",
+            "id": 5,
+            "label": "Price Rule Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "create_coupons",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/newCoupon",
+                    "Label": "Create Coupons"
+                },
+                {
+                    "id": 2,
+                    "name": "show_coupons",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/index",
+                    "Label": "Show/List Coupons"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_coupons",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/editCoupon",
+                    "Label": "Edit Coupons"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_coupons",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/destroyCoupon",
+                    "Label": "Delete Coupons"
+                },
+                {
+                    "id": 5,
+                    "name": "show_coupon_modes",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/couponModeList",
+                    "Label": "Show/List Coupon Modes"
+                },
+                {
+                    "id": 6,
+                    "name": "create_coupon_modes",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/storeCouponMode",
+                    "Label": "Create Coupon Mode"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_coupon_modes",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/updateCouponMode",
+                    "Label": "Edit Coupon Mode"
+                },
+                {
+                    "id": 8,
+                    "name": "delete_coupon_modes",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/destroyCouponMode",
+                    "Label": "Delete Coupon Mode"
+                },
+                {
+                    "id": 9,
+                    "name": "show_coupon_types",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/couponTypeList",
+                    "Label": "Show/List Coupon Types"
+                },
+                {
+                    "id": 10,
+                    "name": "create_coupon_types",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/storeCouponType",
+                    "Label": "Create Coupon Type"
+                },
+                {
+                    "id": 11,
+                    "name": "edit_coupon_types",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/updateCouponType",
+                    "Label": "Edit Coupon Type"
+                },
+                {
+                    "id": 12,
+                    "name": "delete_coupon_types",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/destroyCouponType",
+                    "Label": "Delete Coupon Type"
+                },
+                {
+                    "id": 13,
+                    "name": "show_coupon_entities",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/couponEntityList",
+                    "Label": "Show/List Coupon Entities"
+                },
+                {
+                    "id": 14,
+                    "name": "create_cart_price_rule",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/create",
+                    "Label": "Create Cart Price Rule"
+                },
+                {
+                    "id": 15,
+                    "name": "list_cart_price_rules",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/index",
+                    "Label": "List Cart Price Rules"
+                },
+                {
+                    "id": 16,
+                    "name": "edit_cart_price_rule",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/edit",
+                    "Label": "Edit Cart Price Rule"
+                },
+                {
+                    "id": 17,
+                    "name": "delete_cart_price_rule",
+                    "controller": "Modules/PriceRuleManagement/app/Http/Controllers/CartPriceRuleManagementController/destroy",
+                    "Label": "Delete Cart Price Rule"
+                }
+            ]
+        },
+        {
+            "name": "category_management",
+            "id": 6,
+            "label": "Category Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_categories",
+                    "controller": "App/Http/Controllers/Admin/CategoryController@index",
+                    "Label": "List Categories"
+                },
+                {
+                    "id": 2,
+                    "name": "create_categories",
+                    "controller": "App/Http/Controllers/Admin/CategoryController@create",
+                    "Label": "Create Category"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_categories",
+                    "controller": "App/Http/Controllers/Admin/CategoryController@edit",
+                    "Label": "Edit Category"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_categories",
+                    "controller": "App/Http/Controllers/Admin/CategoryController@destroy",
+                    "Label": "Delete Category"
+                }
+            ]
+        },
+        {
+            "name": "product_management",
+            "id": 7,
+            "label": "Product Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_products",
+                    "controller": "App/Http/Controllers/Admin/ProductController@index",
+                    "Label": "List Products"
+                },
+                {
+                    "id": 2,
+                    "name": "create_products",
+                    "controller": "App/Http/Controllers/Admin/ProductController@create",
+                    "Label": "Create Product"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_products",
+                    "controller": "App/Http/Controllers/Admin/ProductController@edit",
+                    "Label": "Edit Product"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_products",
+                    "controller": "App/Http/Controllers/Admin/ProductController@destroy",
+                    "Label": "Delete Product"
+                },
+                {
+                    "id": 5,
+                    "name": "list_product_reviews",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewController@index",
+                    "Label": "List Product Reviews"
+                },
+                {
+                    "id": 12,
+                    "name": "create_product_reviews",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewController@create",
+                    "Label": "Create Product Review"
+                },
+                {
+                    "id": 6,
+                    "name": "edit_product_reviews",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewController@update",
+                    "Label": "Manage Product Reviews"
+                },
+                {
+                    "id": 7,
+                    "name": "delete_product_reviews",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewController@destroy",
+                    "Label": "Delete Product Reviews"
+                },
+                {
+                    "id": 8,
+                    "name": "list_product_review_attributes",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewAttributeController@index",
+                    "Label": "List Product Review Attributes"
+                },
+                {
+                    "id": 9,
+                    "name": "create_product_review_attributes",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewAttributeController@create",
+                    "Label": "Create Product Review Attribute"
+                },
+                {
+                    "id": 10,
+                    "name": "edit_product_review_attributes",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewAttributeController@edit",
+                    "Label": "Edit Product Review Attribute"
+                },
+                {
+                    "id": 11,
+                    "name": "delete_product_review_attributes",
+                    "controller": "App/Http/Controllers/Admin/ProductReviewAttributeController@destroy",
+                    "Label": "Delete Product Review Attribute"
+                }
+            ]
+        },
+        {
+            "name": "general_settings",
+            "id": 8,
+            "label": "General Settings",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_email_templates",
+                    "controller": "App/Http/Controllers/Admin/EmailTemplateController@index",
+                    "Label": "List E-mail Templates"
+                },
+                {
+                    "id": 2,
+                    "name": "create_email_templates",
+                    "controller": "App/Http/Controllers/Admin/EmailTemplateController@create",
+                    "Label": "Create E-mail Template"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_email_templates",
+                    "controller": "App/Http/Controllers/Admin/EmailTemplateController@edit",
+                    "Label": "Edit E-mail Template"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_email_templates",
+                    "controller": "App/Http/Controllers/Admin/EmailTemplateController@destroy",
+                    "Label": "Delete E-mail Template"
+                },
+                {
+                    "id": 5,
+                    "name": "list_banners",
+                    "controller": "App/Http/Controllers/Admin/BannerController@index",
+                    "Label": "List Hero Banners"
+                },
+                {
+                    "id": 6,
+                    "name": "create_banners",
+                    "controller": "App/Http/Controllers/Admin/BannerController@create",
+                    "Label": "Create Hero Banner"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_banners",
+                    "controller": "App/Http/Controllers/Admin/BannerController@edit",
+                    "Label": "Edit Hero Banner"
+                },
+                {
+                    "id": 8,
+                    "name": "delete_banners",
+                    "controller": "App/Http/Controllers/Admin/BannerController@destroy",
+                    "Label": "Delete Hero Banner"
+                }
+            ]
+        },
+        {
+            "name": "cms_management",
+            "id": 9,
+            "label": "CMS Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_cms_pages",
+                    "controller": "App/Http/Controllers/Admin/CmsPageController@index",
+                    "Label": "List Pages"
+                },
+                {
+                    "id": 2,
+                    "name": "create_cms_pages",
+                    "controller": "App/Http/Controllers/Admin/CmsPageController@create",
+                    "Label": "Create Page"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_cms_pages",
+                    "controller": "App/Http/Controllers/Admin/CmsPageController@edit",
+                    "Label": "Edit Page"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_cms_pages",
+                    "controller": "App/Http/Controllers/Admin/CmsPageController@destroy",
+                    "Label": "Delete Page"
+                },
+                {
+                    "id": 5,
+                    "name": "list_cms_blocks",
+                    "controller": "App/Http/Controllers/Admin/CmsBlockController@index",
+                    "Label": "List Blocks"
+                },
+                {
+                    "id": 6,
+                    "name": "create_cms_blocks",
+                    "controller": "App/Http/Controllers/Admin/CmsBlockController@create",
+                    "Label": "Create Block"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_cms_blocks",
+                    "controller": "App/Http/Controllers/Admin/CmsBlockController@edit",
+                    "Label": "Edit Block"
+                },
+                {
+                    "id": 8,
+                    "name": "delete_cms_blocks",
+                    "controller": "App/Http/Controllers/Admin/CmsBlockController@destroy",
+                    "Label": "Delete Block"
+                }
+            ]
+        },
+        {
+            "name": "catalog_rule_management",
+            "id": 10,
+            "label": "Catalog Price Rule Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_catalog_rules",
+                    "controller": "App/Http/Controllers/Admin/CatalogPriceRuleController@index",
+                    "Label": "List Catalog Price Rules"
+                },
+                {
+                    "id": 2,
+                    "name": "create_catalog_rules",
+                    "controller": "App/Http/Controllers/Admin/CatalogPriceRuleController@create",
+                    "Label": "Create Catalog Price Rule"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_catalog_rules",
+                    "controller": "App/Http/Controllers/Admin/CatalogPriceRuleController@edit",
+                    "Label": "Edit Catalog Price Rule"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_catalog_rules",
+                    "controller": "App/Http/Controllers/Admin/CatalogPriceRuleController@destroy",
+                    "Label": "Delete Catalog Price Rule"
+                }
+            ]
+        },
+        {
+            "name": "store_management",
+            "id": 11,
+            "label": "Store Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_stores",
+                    "controller": "App/Http/Controllers/Admin/StoreController@index",
+                    "Label": "List Stores"
+                },
+                {
+                    "id": 2,
+                    "name": "create_stores",
+                    "controller": "App/Http/Controllers/Admin/StoreController@create",
+                    "Label": "Create Store"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_stores",
+                    "controller": "App/Http/Controllers/Admin/StoreController@edit",
+                    "Label": "Edit Store"
+                },
+                {
+                    "id": 4,
+                    "name": "view_stores",
+                    "controller": "App/Http/Controllers/Admin/StoreController@show",
+                    "Label": "View Store Details"
+                },
+                {
+                    "id": 5,
+                    "name": "delete_stores",
+                    "controller": "App/Http/Controllers/Admin/StoreController@destroy",
+                    "Label": "Delete Store"
+                }
+            ]
+        },
+        {
+            "name": "order_management",
+            "id": 12,
+            "label": "Order Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_orders",
+                    "controller": "App/Http/Controllers/Admin/OrderController@index",
+                    "Label": "List Orders"
+                },
+                {
+                    "id": 2,
+                    "name": "view_orders",
+                    "controller": "App/Http/Controllers/Admin/OrderController@show",
+                    "Label": "View Order Details"
+                },
+                {
+                    "id": 3,
+                    "name": "update_order_status",
+                    "controller": "App/Http/Controllers/Admin/OrderController@updateStatus",
+                    "Label": "Update Order Status"
+                },
+                {
+                    "id": 4,
+                    "name": "cancel_orders",
+                    "controller": "App/Http/Controllers/Admin/OrderController@cancel",
+                    "Label": "Cancel Order"
+                }
+            ]
+        },
+        {
+            "name": "shipping_management",
+            "id": 13,
+            "label": "Shipping Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_shipping_methods",
+                    "controller": "App/Http/Controllers/Admin/ShippingMethodController@index",
+                    "Label": "List Shipping Methods"
+                },
+                {
+                    "id": 2,
+                    "name": "create_shipping_methods",
+                    "controller": "App/Http/Controllers/Admin/ShippingMethodController@create",
+                    "Label": "Create Shipping Method"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_shipping_methods",
+                    "controller": "App/Http/Controllers/Admin/ShippingMethodController@edit",
+                    "Label": "Edit Shipping Method"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_shipping_methods",
+                    "controller": "App/Http/Controllers/Admin/ShippingMethodController@destroy",
+                    "Label": "Delete Shipping Method"
+                }
+            ]
+        },
+        {
+            "name": "payment_management",
+            "id": 14,
+            "label": "Payment Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_payment_methods",
+                    "controller": "App/Http/Controllers/Admin/PaymentMethodController@index",
+                    "Label": "List Payment Methods"
+                },
+                {
+                    "id": 2,
+                    "name": "create_payment_methods",
+                    "controller": "App/Http/Controllers/Admin/PaymentMethodController@create",
+                    "Label": "Create Payment Method"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_payment_methods",
+                    "controller": "App/Http/Controllers/Admin/PaymentMethodController@edit",
+                    "Label": "Edit Payment Method"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_payment_methods",
+                    "controller": "App/Http/Controllers/Admin/PaymentMethodController@destroy",
+                    "Label": "Delete Payment Method"
+                }
+            ]
+        },
+        {
+            "name": "tax_management",
+            "id": 15,
+            "label": "Tax Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_tax_methods",
+                    "controller": "App/Http/Controllers/Admin/TaxMethodController@index",
+                    "Label": "List Tax Methods"
+                },
+                {
+                    "id": 2,
+                    "name": "create_tax_methods",
+                    "controller": "App/Http/Controllers/Admin/TaxMethodController@create",
+                    "Label": "Create Tax Method"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_tax_methods",
+                    "controller": "App/Http/Controllers/Admin/TaxMethodController@edit",
+                    "Label": "Edit Tax Method"
+                },
+                {
+                    "id": 4,
+                    "name": "delete_tax_methods",
+                    "controller": "App/Http/Controllers/Admin/TaxMethodController@destroy",
+                    "Label": "Delete Tax Method"
+                },
+                {
+                    "id": 5,
+                    "name": "list_tax_rates",
+                    "controller": "App/Http/Controllers/Admin/TaxRateController@index",
+                    "Label": "List Tax Rates"
+                },
+                {
+                    "id": 6,
+                    "name": "create_tax_rates",
+                    "controller": "App/Http/Controllers/Admin/TaxRateController@create",
+                    "Label": "Create Tax Rate"
+                },
+                {
+                    "id": 7,
+                    "name": "edit_tax_rates",
+                    "controller": "App/Http/Controllers/Admin/TaxRateController@edit",
+                    "Label": "Edit Tax Rate"
+                },
+                {
+                    "id": 8,
+                    "name": "delete_tax_rates",
+                    "controller": "App/Http/Controllers/Admin/TaxRateController@destroy",
+                    "Label": "Delete Tax Rate"
+                }
+            ]
+        },
+        {
+            "name": "web_configuration",
+            "id": 16,
+            "label": "Web Configuration Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "manage_configuration",
+                    "controller": "App/Http/Controllers/Admin/ConfigurationController@index",
+                    "Label": "Manage Web Configuration"
+                }
+            ]
+        },
+        {
+            "name": "newsletter_management",
+            "id": 17,
+            "label": "Newsletter Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_newsletters",
+                    "controller": "App\\Http\\Controllers\\Admin\\NewsletterController@index",
+                    "Label": "List Newsletter Subscribers"
+                },
+                {
+                    "id": 2,
+                    "name": "delete_newsletter_subscriber",
+                    "controller": "App\\Http\\Controllers\\Admin\\NewsletterController@destroy",
+                    "Label": "Delete Newsletter Subscriber"
+                },
+                {
+                    "id": 4,
+                    "name": "create_newsletter_subscriber",
+                    "controller": "App\\Http\\Controllers\\Admin\\NewsletterController@create, App\\Http\\Controllers\\Admin\\NewsletterController@store",
+                    "Label": "Create Newsletter Subscriber"
+                },
+                {
+                    "id": 5,
+                    "name": "edit_newsletter_subscriber",
+                    "controller": "App\\Http\\Controllers\\Admin\\NewsletterController@edit, App\\Http\\Controllers\\Admin\\NewsletterController@update",
+                    "Label": "Edit Newsletter Subscriber"
+                }
+            ]
+        },
+        {
+            "name": "url_rewrite_management",
+            "id": 18,
+            "label": "URL Rewrite Management",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "list_url_rewrites",
+                    "controller": "App\\Http\\Controllers\\Admin\\UrlRewriteController@index",
+                    "Label": "List URL Rewrites"
+                },
+                {
+                    "id": 3,
+                    "name": "edit_url_rewrites",
+                    "controller": "App\\Http\\Controllers\\Admin\\UrlRewriteController@edit, App\\Http\\Controllers\\Admin\\UrlRewriteController@update",
+                    "Label": "Edit URL Rewrite"
+                }
+            ]
+        }
+    ]
+}

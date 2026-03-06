@@ -1,0 +1,14 @@
+{
+    "name": "Products",
+    "alias": "products",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Products\\Providers\\ProductsServiceProvider"
+    ],
+    "files": [
+        "Exports/ProductsExport.php",
+        "Imports/ProductsImport.php"
+    ]
+}
